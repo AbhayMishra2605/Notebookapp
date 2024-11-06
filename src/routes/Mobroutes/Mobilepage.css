@@ -1,0 +1,43 @@
+.Mobcontainer {
+   
+    display: flex;
+    height: 100%;
+    
+  }
+  
+  .Mobsidebar {
+    width: 100%;
+    border-right: 0.1vw solid #d1d5db;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+  }
+
+  .Mobsidebar h1 {
+    padding-left: 20vw;
+    padding-top: 5vw;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+.Mobsidebar .Mobadd-button button {
+    position: fixed;
+    background-color: #16008B;
+    color: white;
+    border: none;
+    bottom: 5%;
+    left: 80%;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar .add-button {
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+  }

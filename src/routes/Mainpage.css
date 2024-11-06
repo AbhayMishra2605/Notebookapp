@@ -1,0 +1,94 @@
+.container {
+   
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 25%;
+    border-right: 0.1vw solid #d1d5db;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+  }
+  
+  .sidebar h1 {
+    padding: 1.15vw;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .sidebar .add-button {
+    padding: 1.15vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sidebar .add-button button {
+    position: fixed;
+    background-color: #16008B;
+    color: white;
+    border: none;
+    bottom: 5%;
+    left: 19%;
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vw;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-content {
+    width: 75%;
+    background-color: #e0f2fe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .main-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.15vw;
+  }
+  
+  .main-content p {
+    margin-bottom: 2.5vw;
+  }
+  
+  .main-content .encryption {
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-content .encryption i {
+    margin-right: 0.7vw;
+  }
+
+ 
+ .backgroundImage{
+    margin-top: auto;
+    width: 50%;
+    height: 40%;
+ }
+  
+#Poketnote{
+    font-size: 3vw;
+}
+
+#PoketMassage{
+    font-size: 1.3vw;
+
+}
+
+.encryption{
+    margin-top:auto;
+}
+
