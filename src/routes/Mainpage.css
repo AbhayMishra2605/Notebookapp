@@ -9,8 +9,9 @@
     border-right: 0.1vw solid #d1d5db;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; 
     background-color: #FFFFFF;
+    
   }
   
   .sidebar h1 {
@@ -19,13 +20,8 @@
     font-weight: 600;
   }
   
-  .sidebar .add-button {
-    padding: 1.15vw;
-    display: flex;
-    justify-content: center;
-  }
   
-  .sidebar .add-button button {
+   .add-button button {
     position: fixed;
     background-color: #16008B;
     color: white;
@@ -39,6 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    
   }
   
   .main-content {
@@ -47,10 +45,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
+    justify-content: flex-start; 
+    overflow-y: auto; }
   
   .main-content h2 {
     font-size: 1.5rem;
@@ -92,3 +88,68 @@
     margin-top:auto;
 }
 
+
+
+
+
+
+.notebook-list {
+ 
+  overflow-y: auto; 
+  
+}
+
+.notebook-list::-webkit-scrollbar {
+  width: 0; 
+}
+
+
+.notebook-list:hover::-webkit-scrollbar {
+  width: 0.3vw; 
+}
+
+.notebook-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.notebook-list::-webkit-scrollbar-thumb {
+  background: #DAE5F5;
+
+  border-radius: 1vw; 
+}
+.notebook-list::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.notebook-item {
+  display: flex;
+  align-items: center;
+  padding: 0.8vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notebook-item:hover {
+  background-color: rgba(47, 47, 47, 0.17);
+
+  border-radius: 1.15vw;
+}
+
+.notebook-icon {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1vw;
+  margin-right: 1vw;
+}
+
+.notebook-item span {
+  font-size: 1.19vw;
+  color: #333;
+}

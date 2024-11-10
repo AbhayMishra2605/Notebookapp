@@ -28,12 +28,14 @@ function Popupmenu({ onClose, onCreate}) {
     <div className="popup-overlay">
       <div className="popup" ref={popupRef}>
         <h2>Create New Group</h2>
+        <label>Group Name</label>
         <input
           type="text"
           placeholder="Enter group name"
           value={groupName}
           onChange={(e) => setGroupName(e.target.value)}
         />
+        <label>Choose colour</label>
         <div className="color-options">
           {['#f28b82', '#fbbc04', '#fff475', '#ccff90', '#a7ffeb', '#cbf0f8', '#aecbfa', '#d7aefb'].map((c) => (
             <span

@@ -83,14 +83,14 @@ function HomePage() {
               <span>{notebook.name}</span>
             </div>
           ))}
-          <div className="add-button">
+          
+        </div>
+      </div>
+      <div className="add-button">
             <button onClick={handlePopup}>
               <FontAwesomeIcon icon={faPlus} />
             </button>
           </div>
-        </div>
-      </div>
-
       <div className="main-content">
         {selectedNotebook && (
           <TextbookArea initial={getInitials(selectedNotebook.name)} notebook={selectedNotebook} 
