@@ -46,7 +46,7 @@ function TextbookArea({ notebook, initial , notes, addNote  }) {
         day: 'numeric', 
         month: 'short', 
         year: 'numeric' 
-    })} • {new Date(note.createdAt).toLocaleTimeString('en-US', { 
+    })} &ensp; • &ensp; {new Date(note.createdAt).toLocaleTimeString('en-US', { 
         hour: 'numeric', 
         minute: 'numeric', 
         hour12: true 
