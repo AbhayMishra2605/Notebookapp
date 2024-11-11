@@ -14,6 +14,14 @@ const isMobile = window.innerWidth >= 768;
       element: isMobile ? <HomePage /> : <MobileHomePage/>, 
       errorElement: <ErrorPage />, 
      },
+    {
+      path:"/Mobile",
+      element:<MobileHomePage/>
+    },
+    {
+      path:"Home",
+      element:<HomePage/>
+    }
     ]);
   
 

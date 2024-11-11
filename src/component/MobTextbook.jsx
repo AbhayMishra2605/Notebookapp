@@ -5,9 +5,9 @@ import send1 from '../assets/send1.png'
 import back from '../assets/back.png'
 import { useNavigate } from "react-router-dom";
 
-
 function MobTextbookArea({ notebook, initial , notes, addNote ,setShowbtn  }) {
    const navigate =useNavigate();
+ 
     const [noteText, setNoteText] = useState('');
 
     const handleAddNote = () => {
@@ -24,9 +24,8 @@ function MobTextbookArea({ notebook, initial , notes, addNote ,setShowbtn  }) {
     };
 
     const HandleNavigate=()=>{
-       
+        navigate(-0.1);
     }
-
  useEffect(()=>{
    
     setShowbtn(false);
