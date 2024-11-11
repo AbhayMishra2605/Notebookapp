@@ -1,43 +1,109 @@
 .Mobcontainer {
-   
-    display: flex;
-    height: 100%;
-    
-  }
+  display: flex;
+  height: 100%;
+  width: 100%;
+ 
+
+}
+
+.Mobsidebar {
+  width: 100%;
+  width: 100%;
   
-  .Mobsidebar {
-    width: 100%;
-    border-right: 0.1vw solid #d1d5db;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-  }
+  border-right: 0.1vw solid #d1d5db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  
+}
 
-  .Mobsidebar h1 {
-    padding-left: 20vw;
-    padding-top: 5vw;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
+.Mobsidebar h1 {
+  padding-left: 5vw;
+  padding-top: 2vw;
+  font-size: 8vw;
+  font-weight: 600;
+}
+
 .Mobsidebar .Mobadd-button button {
-    position: fixed;
-    background-color: #16008B;
-    color: white;
-    border: none;
-    bottom: 5%;
-    left: 80%;
-    border-radius: 50%;
-    width: 15vw;
-    height: 15vw;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+  transform: translateX(-50%);
+  background-color: #16008B;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-  .sidebar .add-button {
-    padding: 5vw;
-    display: flex;
-    justify-content: center;
-  }
+
+
+.mobnotebook-list {
+  height: 89vh;
+  padding-left: 3vw;
+  overflow-y: auto; 
+  
+}
+
+.mobnotebook-list::-webkit-scrollbar {
+  width: 0; 
+}
+
+
+.mobnotebook-list:hover::-webkit-scrollbar {
+  width: 1vw; 
+}
+
+.mobnotebook-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.mobnotebook-list::-webkit-scrollbar-thumb {
+  background: #DAE5F5;
+
+  border-radius: 1vw; 
+}
+.mobnotebook-list::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  
+}
+
+.mobnotebook-item {
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mobnotebook-item:hover {
+  background-color: rgba(47, 47, 47, 0.17);
+
+  border-radius: 5vw;
+}
+
+.mobnotebook-icon {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 6vw;
+  margin-right: 4vw;
+}
+
+.mobnotebook-item span {
+  font-size: 5.5vw;
+  color: #333;
+}

@@ -6,12 +6,12 @@ import ErrorPage from "./routes/404";
 import HomePage from "./routes/Mainpage";
 import MobileHomePage from "./routes/Mobroutes/Mobilepage";
 
-const isMobile = window.innerWidth <= 768;
+const isMobile = window.innerWidth >= 768;
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: isMobile ? <MobileHomePage/> : <HomePage />, 
+      element: isMobile ? <HomePage /> : <MobileHomePage/>, 
       errorElement: <ErrorPage />, 
      }
   ]);

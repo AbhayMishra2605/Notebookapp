@@ -1,0 +1,86 @@
+
+
+  
+
+  
+ 
+  
+  .mobpopup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobpopup {
+    width: 85%;
+    height: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    padding: 2vw;
+    border-radius: 2vw;
+    
+    box-shadow: 0 8vw 2vw rgba(0, 0, 0, 0.2);
+  }
+  
+  .mobpopup h2 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .mobpopup #l1{
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 2vw;
+  }
+
+  .mobpopup #l2{
+    font-size: 4vw;
+    font-weight: bold;
+    
+  }
+  
+  .mobpopup input {
+  
+    width: 65%;
+    padding: 1.2vw;
+    margin-bottom: 4vw;
+    
+    border: .5vw solid #ccc;
+    border-radius: 2vw;
+    font-size: 3vw;
+
+  }
+  
+  .mobcolor-options {
+    margin-left: 2.6vw;
+    width: 65%;
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 4vw;
+  }
+  
+  .mobcolor-circle {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .mobcreate-button {
+    margin:auto;
+    width: 40%;
+    padding: 1vw;
+    background-color: rgba(0, 31, 139, 1);
+    color: white;
+    border: none;
+    border-radius: 1.2vw;
+    cursor: pointer;
+    font-size: 4vw;
+  }
+  
