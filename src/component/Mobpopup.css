@@ -15,16 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    
   }
   
   .mobpopup {
-    width: 85%;
-    height: 50vw;
+    width: 88%;
+    height: 60vw;
     display: flex;
     flex-wrap: wrap;
     background: white;
     padding: 2vw;
-    border-radius: 2vw;
+    border-radius: 3vw;
     
     box-shadow: 0 8vw 2vw rgba(0, 0, 0, 0.2);
   }
@@ -32,11 +34,14 @@
   .mobpopup h2 {
     width: 100%;
     margin-top: 0;
+   
+
   }
   .mobpopup #l1{
     font-size: 4vw;
     font-weight: bold;
-    margin-top: 2vw;
+    margin-top: 3vw;
+    
   }
 
   .mobpopup #l2{
@@ -47,9 +52,10 @@
   
   .mobpopup input {
   
-    width: 65%;
+    width: 64%;
     padding: 1.2vw;
-    margin-bottom: 4vw;
+    font-weight:500;
+    margin-bottom: 8vw;
     
     border: .5vw solid #ccc;
     border-radius: 2vw;
@@ -59,17 +65,24 @@
   
   .mobcolor-options {
     margin-left: 2.6vw;
-    width: 65%;
+    width: 64%;
     display: flex;
-    gap: 2vw;
-    margin-bottom: 4vw;
+    gap: 1vw;
+    margin-bottom: 2vw;
+    
+  }
+  
+
+  .mobcolor-circle{
+    -webkit-tap-highlight-color: transparent; 
   }
   
   .mobcolor-circle {
-    width: 5vw;
-    height: 5vw;
+    width: 6vw;
+    height: 6vw;
     border-radius: 50%;
-    cursor: pointer;
+ 
+    
   }
   
   .mobcreate-button {
@@ -80,7 +93,8 @@
     color: white;
     border: none;
     border-radius: 1.2vw;
-    cursor: pointer;
-    font-size: 4vw;
+    font-size: 6vw;
+   
+   
   }
   

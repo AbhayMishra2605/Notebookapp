@@ -13,15 +13,16 @@ const isMobile = window.innerWidth >= 768;
       path: "/",
       element: isMobile ? <HomePage /> : <MobileHomePage/>, 
       errorElement: <ErrorPage />, 
-     }
-  ]);
+     },
+    ]);
   
-
 
 
   ReactDOM.createRoot(document.getElementById("root")).render(
   
-      <RouterProvider router={router} />
+    
+    <RouterProvider router={router} />
+
  
   );
   

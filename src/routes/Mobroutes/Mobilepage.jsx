@@ -3,24 +3,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './Mobilepage.css';
 import MobPopupmenu from '../../component/Mobpopup';
-import TextbookArea from '../../component/Textbook';
+import MobTextbookArea from '../../component/MobTextbook';
 
 function MobileHomePage() {
     const [showPopup, setShowPopup] = useState(false);
     const [notebooks, setNotebooks] = useState([]);
     const [selectedNotebook, setSelectedNotebook] = useState(null);
     const [notes, setNotes] = useState([]);
+    const [showbtn,setShowbtn]=useState()
     
-   
     useEffect(() => {
-     
+      setShowbtn(true)
+
       const storedNotebooks = JSON.parse(localStorage.getItem('groups')) || [];
       const storedNotes = JSON.parse(localStorage.getItem('notes')) || [];
       setNotebooks(storedNotebooks);
       setNotes(storedNotes);
+      
     }, []);
   
     useEffect(() => {
+     
       localStorage.setItem('groups', JSON.stringify(notebooks));
       localStorage.setItem('notes', JSON.stringify(notes));
     }, [notebooks, notes]);
@@ -65,9 +68,13 @@ function MobileHomePage() {
   };
   
     return (
-        <div className="MObcontainer">
-             
+        <div className="Mobcontainer">
+           {selectedNotebook && (
+          <MobTextbookArea initial={getInitials(selectedNotebook.name)} notebook={selectedNotebook} 
+          notes={notes.filter(note => note.groupId === (selectedNotebook && selectedNotebook.id))} addNote={addNote} setShowbtn={setShowbtn}  />
+        )}
             <div className="Mobsidebar">
+           
                 <div>
                     <h1>Pocket Notes</h1>
                 </div>
@@ -86,14 +93,17 @@ function MobileHomePage() {
           
         </div>
                 <div className="Mobadd-button">
-                <button onClick={handlePopup}>
+                {showbtn && (<button onClick={handlePopup}>
               <FontAwesomeIcon icon={faPlus} />
-            </button>
+            </button>) }
+            
                 </div>
-            </div>
+                </div>
             {showPopup && (
         <MobPopupmenu onClose={() => setShowPopup(false)} onCreate={handleCreateNotebook}  />
+        
       )}
+     
         </div>
     )
 }

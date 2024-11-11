@@ -1,50 +1,52 @@
-#textarea{
-    width: 75%;
+#mobtextarea{
+    width: 100%;
     height: 100%;
     position: fixed;
     background: rgba(218, 229, 245, 1);
 
 }
 
-.top{
+.mobtop{
     width: 100%;
     background: rgba(0, 31, 139, 1);
     position: sticky;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+} 
 
-}
-
-.textnotebook-icon {
-    width: 3.5vw;
-    height: 3.5vw;
+.mobtextnotebook-icon {
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
-    font-size: 1.5vw;
-    margin-right: 1vw;
+    font-size: 5vw;
+    margin-left: 2vw;
+    margin-right: 3vw;
   }
   
-  .textnotebook-item span {
-    font-size: 1.6vw;
+  .mobtextnotebook-item span {
+    font-size: 4.5vw;
+   
     color: rgba(255, 255, 255, 1);
 
   }
 
-  .textnotebook-item {
+  .mobtextnotebook-item {
     display: flex;
     align-items: center;
-    padding: 0.8vw;
+    padding: 1.5vw;
     font-weight: bold;
-    cursor: pointer;
     transition: background 0.3s;
   }
 
 
-  #textboxarea{
+  #mobtextboxarea{
     width: 100%;
-    height: 29%;
+    height: 25%;
     position: absolute;
     bottom: 0;
     background: rgba(0, 31, 139, 1);
@@ -56,92 +58,100 @@
     
   }
 
- #textboxarea textarea{
+ #mobtextboxarea textarea{
     width: 95%;
     height: 80%;
-  border-radius: 0.8vw ;
-  border: 0.1vw 0px 0px 0px;
+  border-radius: 3vw ;
+  
   
   box-sizing: border-box;
-  padding: 1vw;
-  font-size: 1.5vw;
+  padding: 2vw;
+  font-size: 3.5vw;
   outline: none;
 
 
  }
 
- .button{
+ .mobbutton{
+ 
     position: fixed;
-    right: 3%;
-    bottom: 0;
-
- }
- .button  {
+    right: 11.5%;
+    bottom: 7%;
   width: 3vw;
   mix-blend-mode: multiply; 
-  cursor: pointer;
+  user-select: none;
+  outline: none;
   background-color: rgba(0, 0, 0, 0); 
 }
 
  
-.textnote-list{
+.mobtextnote-list{
   display: flex;
   align-items: center;
   flex-direction: column;
- height:59.15% ;
+ height:67% ;
 }
 
-.textnote-list div{
-  width: 95%;
+.mobtextnote-list div{
+ 
+  width: 93%;
   background: rgba(255, 255, 255, 1);
-  margin-top: 1vw;
-  border-radius: 0.3vw;
+  margin-top: 1.5vw;
+  border-radius: 0.7vw;
   box-sizing: border-box;
   padding-left: 1vw;
-  box-shadow: 0px 0.3vw 1.3vw 0px rgba(0, 0, 0, 0.25);
-  font-size: 1.2vw;
-  
-  word-wrap: break-word;   
-  overflow-wrap: break-word;
-      
+  box-shadow: 0px 0.9vw 0.5vw 0px rgba(0, 0, 0, 0.25);
+  font-size: 3vw;
+  word-wrap: break-word;  
+   overflow-wrap: break-word;
   
   
 }
 
-.textnote-list small{
-  margin-left: 83%;
+.mobtextnote-list small{
+  margin-left: 59%;
+  user-select: none;
   
 }
 
 
-.textnote-list {
+.mobtextnote-list {
  
   overflow-y: auto; 
   
 }
 
-.textnote-list::-webkit-scrollbar {
+.mobtextnote-list::-webkit-scrollbar {
   width: 0; 
 }
 
 
-.textnote-list:hover::-webkit-scrollbar {
+.mobtextnote-list:hover::-webkit-scrollbar {
   width: 0.3vw; 
 }
 
-.textnote-list::-webkit-scrollbar-track {
+.mobtextnote-list::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
 
-.textnote-list::-webkit-scrollbar-thumb {
+.mobtextnote-list::-webkit-scrollbar-thumb {
   background: #DAE5F5;
 
   border-radius: 1vw; 
 }
-.textnote-list::-webkit-scrollbar-thumb:hover {
+.mobtextnote-list::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
 
 
 
+.mobtextnotebook-item img{
+  margin-left:2vw;
+  margin-right: 1vw;
+  height: 4.5vw;
+}
 
+#btnhandle {
+  user-select: none;
+ 
+}

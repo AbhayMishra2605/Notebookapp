@@ -1,15 +1,15 @@
 .Mobcontainer {
+
   display: flex;
   height: 100%;
   width: 100%;
- 
+ user-select: none;
 
 }
 
 .Mobsidebar {
   width: 100%;
   width: 100%;
-  
   border-right: 0.1vw solid #d1d5db;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,12 @@
   padding-top: 2vw;
   font-size: 8vw;
   font-weight: 600;
+  outline: none;
+  user-select: none;
 }
 
 .Mobsidebar .Mobadd-button button {
-  position: absolute;
+  position:absolute;
   bottom: 5%;
   right: 0%;
   transform: translateX(-50%);
@@ -40,16 +42,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+ user-select: none;
+ outline: none;
 }
 
 
 
 .mobnotebook-list {
-  height: 89vh;
+  height: 80vh;
   padding-left: 3vw;
   overflow-y: auto; 
-  
+  outline: none;
+  user-select: none;
 }
 
 .mobnotebook-list::-webkit-scrollbar {
@@ -82,14 +86,18 @@
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+
+  outline: none;
+  user-select: none;
+}
+.mobnotebook-item:focus {
+  outline: none;
 }
 
-.mobnotebook-item:hover {
-  background-color: rgba(47, 47, 47, 0.17);
 
-  border-radius: 5vw;
+.mobnotebook-item {
+  -webkit-tap-highlight-color: transparent; 
 }
-
 .mobnotebook-icon {
   width: 15vw;
   height: 15vw;
